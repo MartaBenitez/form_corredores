@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ap_corredores</title>
+	<meta charset="UTF-8">
+	<script src="javascript/funciones.js"></script>
+</head>
+<body>
+	<h1>Formulario de corredores</h1>
+	<form method="POST" action="">
+		<label for="nombre">Nombre:</label>
+		<input type="text" placeholder="Introduce tu nombre" id="nombre" name="nombre" onblur="validacionNombre(this.value);">
+		<label for="mail">Email:</label>
+		<input type="email" placeholder="Introduce tu email" id="mail" name="nombre" onblur="validacionMail(this.value);">
+		<p>¿Eres corredor?</p>
+		<input type="radio" id="corredor" name="corre" value="si" onclick="escribirDistancia();">
+		<label for="corredor">SI</label>
+		<div>
+		</div>
+		<input type="radio" id="no_corredor" name="corre" checked value="no" onclick="nohacorrido();">
+		<label for="no_corredor">NO</label>
+		<br>
+		<br>
+		<input type="button" value="ENVIAR" onclick="mensaje();">
+	</form>
+</body>
+</html>
